@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -7,12 +8,61 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
-<body>
-<div class="d1"></div>
-<div class="d2"></div>
-<div class="d3"></div>
+<style>
+  .main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 20px 20px;
+  }
 
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  .div200 {
+    width: 200px;
+    height: 200px;
+    background: aliceblue;
+  }
+
+  .d1 {
+    width: 100px;
+    height: 100px;
+    background: orange;
+  }
+
+  .d2 {
+    width: 100px;
+    height: 100px;
+    background: pink;
+  }
+
+  .d3 {
+    width: 100px;
+    height: 100px;
+    background: skyblue;
+  }
+</style>
+<body>
+<div class="main">
+  <div class="div200">
+    <button id="b1">div1</button>
+    <div class="d1">
+    </div>
+  </div>
+
+  <div class="div200">
+    <button id="b2">div2</button>
+    <div class="d2">
+    </div>
+  </div>
+
+  <div class="div200">
+    <button id="b3">div3</button>
+    <div class="d3">
+    </div>
+  </div>
+</div>
+
+
+<script src="../jQuery.js" type="application/javascript"></script>
 <script src="./index.js"></script>
 </body>
+
 </html>
