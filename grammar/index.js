@@ -31,6 +31,23 @@ $(function () {
       // 执行结束后再次调用回调函数
       $(this).css('backgroundColor', '#000');
     });
-    // .css('backgroundColor', '#000');
+  });
+  
+  // text html 可修改元素内文字
+  // val 可修改表单内数据
+  $('#b5').on('click', function () {
+    // 获取内容
+    // $('.d5').text(function (index, oldcontent) {
+    //   console.log(index, oldcontent);
+    // });
+    // 修改内容
+    $('.d5').html('修改内容');
+  });
+
+  // 获取属性
+  $('#b6').on('click', function () {
+    $('.d6').attr('class', function (index, oldvalue) {
+      console.log(index, oldvalue);
+    });
   });
 });
