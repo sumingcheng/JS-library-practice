@@ -3,22 +3,34 @@
 
 $(function () {
   // 隐藏/显示 display toggle=hide+show
-  $('#b1').click(function () {
+  $('#b1').on('click', function () {
     // $('.d1').hide(1000);
-    $('.d1').toggle(1000);
+    // $('.d1').show(1000);
+    $('.d1').toggle(1000, function () {
+      console.log('触发回调函数');
+    });
   });
 
   // 淡入淡出
-  $('#b2').click(function () {
+  $('#b2').on('click', function () {
     // $('.d2').fadeIn();
     // $('.d2').fadeOut();
     $('.d2').fadeToggle(1000);
   });
-  // 滑动方法
 
-  $('#b3').click(function () {
+  // 滑动方法
+  $('#b3').on('click', function () {
     // $('.d2').slideDown();
     // $('.d2').slideUp();
     $('.d3').slideToggle(1000);
+  });
+
+  // 链式调用
+  $('#b4').on('click', function () {
+    $('.d4').css('backgroundColor', 'red').slideUp(2000).slideDown(2000, function () {
+      // 执行结束后再次调用回调函数
+      $(this).css('backgroundColor', '#000');
+    });
+    // .css('backgroundColor', '#000');
   });
 });
