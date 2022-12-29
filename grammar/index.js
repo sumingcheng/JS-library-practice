@@ -14,4 +14,11 @@ $(function () {
     // $('.d2').fadeOut();
     $('.d2').fadeToggle(1000);
   });
+  // 滑动方法
+
+  $('#b3').click(function () {
+    // $('.d2').slideDown();
+    // $('.d2').slideUp();
+    $('.d3').slideToggle(1000);
+  });
 });
