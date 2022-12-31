@@ -103,6 +103,16 @@ $(function () {
     console.log($('.d12').parentsUntil());
   });
 
+  // 后代
+  $('#b13').on('click', function () {
+    // 获取所有是h1的后代，返回类数组
+    console.log($('.d13').children('h1'));
+  });
 
+  // 查找
+  $('#b14').on('click', function () {
+    // 查找后代某个元素
+    console.log($('.d14').find('footer'));
+  });
 
 });
