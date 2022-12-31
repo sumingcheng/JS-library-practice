@@ -115,4 +115,16 @@ $(function () {
     console.log($('.d14').find('footer'));
   });
 
+  // 兄弟
+  $('#b15').on('click', function () {
+    // 找兄弟
+    // console.log($('.d15').siblings('div'));
+    // 下一个兄弟
+    // console.log($('.d15').next('div'));
+    // 后面所有兄弟
+    // console.log($('.d15').nextAll());
+    // 夹在中间的兄弟
+    console.log($('.d15').nextUntil('p'));
+  });
+
 });
