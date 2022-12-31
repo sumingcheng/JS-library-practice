@@ -131,13 +131,22 @@ $(function () {
   $('#b16').on('click', function () {
     // 返回带有类名 ".d16" 的所有元素：
     // console.log($('.d16').filter('.d16'));
+    // 返回不匹配标准的所有元素
+    console.log($('.d16').not('.d15'));
     // 返回选取的第一个元素
     // console.log($('.d16').first());
     // 返回选取的最后一个元素
     // console.log($('.d16').last());
     // 返回被选元素中带有指定索引号的元素。 类似于选择元素内的关键字
-    console.log($('.d16').eq(2));
+    // console.log($('.d16').eq(2));
   });
 
 
 });
+// 通过全名替代简写的方式来使用 jQuery,这种方式是为了方便在某些项目中不占用$
+// noConflict
+
+// $.noConflict();
+// jQuery(function () {
+//   console.log(document);
+// });
