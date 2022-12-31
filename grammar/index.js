@@ -93,4 +93,16 @@ $(function () {
     $('.d11').height('200');
   });
 
+  // 祖先
+  $('#b12').on('click', function () {
+    // 返回父级，是个类数组
+    // console.log($('.d12').parent());
+    // 返回所有父级，是个类数组
+    // console.log($('.d12').parents());
+    // 返回元素的相同祖先，是个类数组
+    console.log($('.d12').parentsUntil());
+  });
+
+
+
 });
