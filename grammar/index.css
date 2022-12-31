@@ -128,4 +128,11 @@ button {
     color: white;
 }
 
+.d16 {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    background: darkcyan;
+    color: white;
+}
 

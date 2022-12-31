@@ -127,4 +127,17 @@ $(function () {
     console.log($('.d15').nextUntil('p'));
   });
 
+  // 过滤
+  $('#b16').on('click', function () {
+    // 返回带有类名 ".d16" 的所有元素：
+    // console.log($('.d16').filter('.d16'));
+    // 返回选取的第一个元素
+    // console.log($('.d16').first());
+    // 返回选取的最后一个元素
+    // console.log($('.d16').last());
+    // 返回被选元素中带有指定索引号的元素。 类似于选择元素内的关键字
+    console.log($('.d16').eq(2));
+  });
+
+
 });
