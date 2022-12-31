@@ -85,5 +85,12 @@ $(function () {
     $('.d10').toggleClass('NiuB3');
   });
 
+  // 尺寸
+  $('#b11').on('click', function () {
+    // 获取
+    // console.log($('.d11').width());
+    // 设置
+    $('.d11').height('200');
+  });
 
 });
