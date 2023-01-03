@@ -1,38 +1,29 @@
+<script setup>
+import HelloWorld from './components/HelloWorld.vue'
+</script>
+
 <template>
   <div>
-    <el-card class="box-card" shadow="hover">
-      <template #header>
-        <div class="card-header">
-          <span>数组方法</span>
-          <el-button class="button" text>Operation button</el-button>
-        </div>
-      </template>
-      <div class="text item">compact</div>
-    </el-card>
+    <a href="https://vitejs.dev" target="_blank">
+      <img src="/vite.svg" class="logo" alt="Vite logo" />
+    </a>
+    <a href="https://vuejs.org/" target="_blank">
+      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+    </a>
   </div>
+  <HelloWorld msg="Vite + Vue" />
 </template>
-<script setup>
-import _ from 'lodash';
-import { onMounted } from 'vue';
 
-
-</script>
-<style lang="scss" scoped>
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+<style scoped>
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
 }
-
-.text {
-  font-size: 14px;
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
 }
-
-.item {
-  margin-bottom: 18px;
-}
-
-.box-card {
-  width: 480px;
+.logo.vue:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
 }
 </style>
