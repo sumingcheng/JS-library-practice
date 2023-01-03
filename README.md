@@ -1,2 +1,2 @@
-# jQuery-practice
+# Common framework learning
 练习jQuery
