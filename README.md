@@ -1,2 +1,2 @@
 # Common framework learning
-练习jQuery
+练习常用的JavaScript库
