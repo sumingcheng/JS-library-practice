@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "ant-design-vue": "^3.2.15",
+    "lodash": "^4.17.21",
     "vue": "^3.2.45"
   },
   "devDependencies": {
